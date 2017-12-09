@@ -16,6 +16,7 @@
     "generate": "ng generate"
   },
   "dependencies": {
+    "@angular-devkit/schematics": "0.0.40",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
@@ -25,18 +26,21 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
-    "@ngx-translate/core": "^9.0.1",
     "@angular/service-worker": "^1.0.0-beta.16",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
+    "@ngx-translate/core": "^9.0.1",
     "bootstrap": "4.0.0-beta.2",
-    "font-awesome": "^4.7.0",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^1.9.1",
     "lodash": "^4.17.4",
+    "popper.js": "^1.12.9",
+    "postcss-sass": "^0.2.0",
     "rxjs": "5.5.2",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "~1.5.0",
+    "@angular/cli": "~1.5.5",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
     "@biesbjerg/ngx-translate-extract": "^2.3.1",
