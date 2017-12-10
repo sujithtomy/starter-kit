@@ -8,14 +8,7 @@ pipeline {
                 sh 'printenv'
                 sh 'node --version'
                 sh 'npm --version'   
-            }
-        }
-
-        stage('Build'){
-            steps {
-                echo 'Building'
                 sh 'npm install'
-                sh 'npm run build'
             }
         }
 
@@ -25,6 +18,15 @@ pipeline {
                 sh 'npm run test'
             }
         }
+
+        stage('Build Production'){
+            steps {
+                echo 'Building'
+                
+                sh 'npm run build'
+            }
+        }
+
         stage('Deploy') {
             steps {
                 echo 'Deploying'
