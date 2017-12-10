@@ -9,7 +9,8 @@ module.exports = function (config) {
     frameworks: ['jasmine', '@angular/cli'],
     plugins: [
       require('karma-jasmine'),
-      require('karma-chrome-launcher'),
+      //equire('karma-chrome-launcher'),
+      require('kkarma-phantomjs-launcher'),
       require('karma-junit-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require('@angular/cli/plugins/karma')
@@ -38,7 +39,8 @@ module.exports = function (config) {
     // Level of logging, can be: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
     logLevel: config.LOG_INFO,
     autoWatch: false,
-    browsers: ['ChromeHeadless'],
+    //browsers: ['ChromeHeadless'],
+    browsers: ['PhantomJS'],
     singleRun: true
   });
 };
