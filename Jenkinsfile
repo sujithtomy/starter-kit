@@ -5,16 +5,20 @@ pipeline {
 
     stages {
         stage('Prepare'){
-            echo 'Pre Checking'
-            sh 'printenv'
-            sh 'node --version'
-            sh 'npm --version'   
+            steps {
+                echo 'Pre Checking'
+                sh 'printenv'
+                sh 'node --version'
+                sh 'npm --version'   
+            }
         }
 
         stage('Build'){
-            echo 'Building'
-            sh 'npm install'
-            sh 'npm run build'
+            steps {
+                echo 'Building'
+                sh 'npm install'
+                sh 'npm run build'
+            }
         }
 
         stage('Test') {
