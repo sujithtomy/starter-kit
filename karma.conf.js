@@ -33,7 +33,7 @@ module.exports = function (config) {
       environment: 'dev'
     },
     reporters: ['progress', 'junit'],
-    port: 9222,
+    port: 9876,
     colors: true,
     // Level of logging, can be: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
     logLevel: config.LOG_INFO,

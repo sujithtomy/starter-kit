@@ -2,7 +2,7 @@ FROM node:8.9.3-alpine
 
 RUN apk add --no-cache chromium
 
-EXPOSE 9222
+EXPOSE 9222 9876
 
 ENTRYPOINT ["chromium-browser"]
 
